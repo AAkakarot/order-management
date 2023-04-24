@@ -1,0 +1,12 @@
+linters:
+  enable-all: true
+  disable:
+    - gofmt
+    - interfacer
+exclude-rules:
+  - 'should have comment or be unexported|exported (golint)'
+  - 'response (gosec)'
+  - 'G304 (gosec)'
+run:
+  skip-dirs:
+    - vendor/
